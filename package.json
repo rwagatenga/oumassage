@@ -7,6 +7,7 @@
 		"compile": "tsc --build tsconfig.json",
 		"dev": "next dev",
 		"format": "prettier --write '**/*.{js,json,md,ts,tsx,yaml,yml,sh}'",
+		"install:offline": "node .yarn/releases/yarn-3.1.1.cjs install --frozen-lockfile",
 		"lint": "next lint",
 		"start": "next start"
 	},
@@ -48,5 +49,6 @@
 		"**/*.{ts,js,tsx}": [
 			"prettier --write"
 		]
-	}
+	},
+	"packageManager": "yarn@3.1.1"
 }
